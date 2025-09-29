@@ -35,6 +35,7 @@ public class AppointmentController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Appointment>> Create(Appointment appointment)
     {
+        if (!ModelState.IsValid) return BadRequest(ModelState);
         _context.Appointments.Add(appointment);
         await _context.SaveChangesAsync();
         return CreatedAtAction(nameof(GetById), new { id = appointment.Id }, appointment);
