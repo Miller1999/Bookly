@@ -16,4 +16,15 @@ export const postAppointment = async (appointment: Omit<Appointment, "id">) => {
 	return api.post<Appointment>("/appointments", appointment);
 };
 
+export const putAppointment = async (
+	id: number,
+	appointment: Omit<Appointment, "id">
+) => {
+	return api.put<Appointment>(`/appointments/${id}`, appointment);
+};
+
+export const deleteAppointment = async (id: number) => {
+	return api.delete(`/appointments/${id}`);
+};
+
 export default api;
