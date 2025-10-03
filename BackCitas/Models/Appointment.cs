@@ -13,4 +13,7 @@ public class Appointment
     [Required(ErrorMessage = "El estado es obligatorio")]
     [RegularExpression("pendiente|confirmada|cancelada", ErrorMessage = "Estado invalido")]
     public string Status { get; set; }
+    
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
+    public DateTime UpdatedAt { get; set; }
 }
