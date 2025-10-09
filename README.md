@@ -23,7 +23,7 @@ A full-stack appointment management system built with ASP.NET Core for the backe
 
 ### Frontend
 
-- **React 19**: UI library
+- **React 18**: UI library
 - **TypeScript**: Type-safe JavaScript
 - **Vite**: Build tool and development server
 - **Tailwind CSS**: Utility-first CSS framework
@@ -42,7 +42,7 @@ Before running this application, make sure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Miller1999/Bookly
    cd "API citas"
    ```
 
@@ -89,6 +89,10 @@ Before running this application, make sure you have the following installed:
 3. **Access the application:**
    - Open your browser and navigate to `http://localhost:5173`
    - Use the interface to manage appointments
+
+## Demo
+
+![Sistema de citas](/assets/image.png)
 
 ## API Endpoints
 
@@ -141,7 +145,8 @@ API citas/
 │   │   ├── components/        # React components
 │   │   ├── services/          # API service layer
 │   │   └── App.tsx            # Main app component
-│   └── package.json           # Frontend dependencies
+│   ├── package.json           # Frontend dependencies
+│   └── README.md              # Frontend-specific setup (Vite template)
 └── README.md                  # This file
 ```
 
